@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_blue">#1565C0</color>
+    <color name="primary_blue_dark">#0D47A1</color>
+    <color name="primary_blue_light">#42A5F5</color>
+    <color name="accent_cyan">#00BCD4</color>
+    <color name="profit_green">#2E7D32</color>
+    <color name="loss_red">#C62828</color>
+    <color name="expense_orange">#E65100</color>
+    <color name="white">#FFFFFF</color>
+    <color name="nav_item_color">#1565C0</color>
+    <color name="black">#000000</color>
+    <color name="gray">#9E9E9E</color>
+    <color name="primary">#1565C0</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="brown">#8B5E3C</color>
+
+</resources>

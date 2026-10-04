@@ -1,0 +1,35 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#8B5E3C"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="160dp">
+
+    <!-- App logo -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_coffee"
+        android:contentDescription="App Logo"/>
+
+    <!-- User name -->
+    <TextView
+        android:id="@+id/txtUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome, Daniel!"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Email or role -->
+    <TextView
+        android:id="@+id/txtUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="daniel@coffeeshop.com"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"/>
+</LinearLayout>

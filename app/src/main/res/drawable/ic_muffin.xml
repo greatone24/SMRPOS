@@ -1,0 +1,24 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+  <!-- Muffin base -->
+  <path
+      android:fillColor="#8D6E63"
+      android:pathData="M14,24h20l-4,12H18z" />
+
+  <!-- Muffin top -->
+  <path
+      android:fillColor="#FFCC80"
+      android:pathData="M10,24c0,-10 28,-10 28,0H10z" />
+
+  <!-- Blueberries -->
+  <path
+      android:fillColor="#3F51B5"
+      android:pathData="M20,20a2,2 0,1 1,4 0a2,2 0,1 1,-4 0z" />
+  <path
+      android:fillColor="#3F51B5"
+      android:pathData="M26,18a2,2 0,1 1,4 0a2,2 0,1 1,-4 0z" />
+</vector>

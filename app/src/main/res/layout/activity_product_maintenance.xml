@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8E1"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            app:backgroundTint="#8B5E3C"
+            app:srcCompat="@drawable/arrow_back" />
+
+        <TextView
+            android:layout_width="346dp"
+            android:layout_height="match_parent"
+            android:text="Product Maintenance"
+            android:textAlignment="center"
+            android:textColor="#5D4037"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagePreview"
+        android:layout_width="386dp"
+        android:layout_height="274dp"
+        android:src="@drawable/ic_coffee" />
+
+    <!-- Product details -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3F51B5"
+            android:drawableStart="@android:drawable/ic_menu_search"
+            android:hint="Search or save a new product"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#9E9E9E" />
+
+        <EditText
+            android:id="@+id/editPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price"
+            android:inputType="numberDecimal" />
+
+
+        <Button
+            android:id="@+id/btnChooseImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Image"
+            app:backgroundTint="@color/brown" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Product"
+            app:backgroundTint="@color/brown" />
+    </LinearLayout>
+</LinearLayout>

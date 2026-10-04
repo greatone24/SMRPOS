@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permissions go here -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <!-- For Android 12 and below -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/smr_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/smr_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SMRPOS"
+        tools:targetApi="31">\
+        <!-- Declare your Dashboard activity -->
+
+        <activity android:name=".OrderMenuActivity" />
+        <activity android:name=".ProductDetailActivity"/>
+        <activity android:name=".ProductMaintenanceActivity"/>
+        <activity android:name=".CartActivity"/>
+        <activity android:name=".PaymentActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

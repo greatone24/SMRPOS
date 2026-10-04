@@ -1,0 +1,140 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFF8E1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#8B5E3C"
+            android:textColor="@android:color/white"
+            app:srcCompat="@drawable/arrow_back" />
+
+        <TextView
+            android:layout_width="194dp"
+            android:layout_height="match_parent"
+            android:text="Cart &amp; Checkout"
+            android:textAlignment="center"
+            android:textColor="#5D4037"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <!-- Summary Section -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCart"
+        android:layout_width="match_parent"
+        android:layout_height="384dp"
+        android:layout_weight="1" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="172dp"
+        android:padding="16dp"
+        android:stretchColumns="1"
+        android:showDividers="middle"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="2dp"
+        tools:visibility="visible">
+
+        <!-- Price Row -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".7"
+                android:layout_height="36dp"
+                android:text="Subtotal:"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtSubtotal"
+                android:layout_width="0dp"
+                android:layout_weight=".3"
+                android:layout_height="36dp"
+                android:text=" ₱0.00"
+                android:textColor="#3E2723"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <!-- Quantity Row -->
+<!--        <TableRow>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight=".7"-->
+<!--                android:layout_height="36dp"-->
+<!--                android:text="Tax: "-->
+<!--                android:textSize="25sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtTax"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight=".3"-->
+<!--                android:layout_height="36dp"-->
+<!--                android:text="x 1"-->
+<!--                android:textSize="25sp" />-->
+<!--        </TableRow>-->
+
+        <!-- Total Row -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".7"
+                android:layout_height="36dp"
+                android:text="Total:"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTotal"
+                android:layout_width="0dp"
+                android:layout_weight=".3"
+                android:layout_height="36dp"
+                android:text="₱90.00"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnClearCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Clear Cart"
+            android:textColor="@android:color/white"
+            app:backgroundTint="#8B5E3C" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Checkout"
+            android:textColor="@android:color/white"
+            app:backgroundTint="#8B5E3C" />
+
+    </LinearLayout>
+
+</LinearLayout>

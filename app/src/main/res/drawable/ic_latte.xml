@@ -1,0 +1,21 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+  <!-- Cup -->
+  <path
+      android:fillColor="#FFFFFF"
+      android:pathData="M12,12h24v20a6,6 0,0 1,-6 6H18a6,6 0,0 1,-6 -6V12z" />
+
+  <!-- Coffee -->
+  <path
+      android:fillColor="#A1887F"
+      android:pathData="M14,14h20v8H14z" />
+
+  <!-- Latte art -->
+  <path
+      android:fillColor="#FFF8E1"
+      android:pathData="M24,18c4,0 6,2 6,4s-2,4 -6,4 -6,-2 -6,-4 2,-4 6,-4z" />
+</vector>

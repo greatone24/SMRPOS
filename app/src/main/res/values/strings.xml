@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SMR POS</string>
+    <string name="add_quantity">+</string>
+    <string name="subtract_quantity">-</string>
+    <string name="open">Open Drawer</string>
+    <string name="close">Close Drawer</string>
+</resources>
